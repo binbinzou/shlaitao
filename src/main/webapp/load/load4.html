@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/self/main.js"></script>
+<title>水质监测标液</title>
+</head>
+<body onload="loadPage();">
+<style type="text/css">
+.duohang{width:200px;}
+td{word-wrap:break-word;word-break:break-all;}
+</style>
+<div class="result">
+<table id="example" class="display"  border="1"  cellspacing="0" >
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="29">SQCI-001</td>
+                <td rowspan="29">土壤中金属</td>
+                <td rowspan="29">40g</td>
+                <td >★Al</td>
+                <td >1000-50000mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Sb</td>
+                <td >80-300mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★As</td>
+                <td >50-400mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Ba</td>
+                <td >80-3000mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Be</td>
+                <td >30-200mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★B</td>
+                <td >80-200mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Cd</td>
+                <td >40-300mg/kg</td>
+            </tr>
+             <tr>
+            	<td >★Ca</td>
+                <td >1500-25000mg/kg</td>
+            </tr>
+             <tr>
+            	<td >★Cr</td>
+                <td >40-300mg/kg</td>
+            </tr>
+             <tr>
+            	<td >★Co</td>
+                <td >30-200mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Cu</td>
+                <td >40-200mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Fe</td>
+                <td >1000-22000mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Pb</td>
+                <td >50-250mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Mg</td>
+                <td >1200-25000mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Mn</td>
+                <td >150-2000mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Hg</td>
+                <td >1-100mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Mo</td>
+                <td >5-250mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Ni</td>
+                <td >40-250mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★K</td>
+                <td >1400-25000mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Se</td>
+                <td >50-250mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Si</td>
+                <td >540-10000mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Ag</td>
+                <td >50-250mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Na</td>
+                <td >150-15000mg/kg</td>
+            </tr>
+             <tr>
+            	<td >★Sr</td>
+                <td >20-500mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Tl</td>
+                <td >50-250mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Sn</td>
+                <td >75-250mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Ti</td>
+                <td >20-500mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★V</td>
+                <td >50-250mg/kg</td>
+            </tr>
+            <tr>
+            	<td >★Zn</td>
+                <td >70-1500mg/kg</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCO-005</td>
+                <td rowspan="1">多氯联苯(每瓶含一种多氯联苯)</td>
+                <td rowspan="1">30g</td>
+                <td >★PCB-1016;PCB-1248;PCB-1221;PCB-1254;PCB-1232;PCB-1260;PCB-1242</td>
+                <td >500-50000ug/Kg</td>
+            </tr>
+             <tr>
+                <td rowspan="1">SQCI-015</td>
+                <td rowspan="1">土壤中阴离子</td>
+                <td rowspan="1">40g</td>
+                <td >★溴化物;氯化物;氟化物;硝酸盐氮(以N计);硫酸盐</td>
+                <td ></td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCO-038</td>
+                <td rowspan="1">土壤中酚类</td>
+                <td rowspan="1">100g</td>
+                <td >★总酚;总有机卤化物(TOX)</td>
+                <td >0.5-100mg/kg</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCO-003</td>
+                <td rowspan="1">土壤中有机氯农药</td>
+                <td rowspan="1">30g</td>
+                <td >★六氯苯;六氯环戊二烯;艾氏剂;α六六六;β六六六;γ六六六;Δ六六六;α氯丹;γ氯丹;4,4’-DDD;4,4’-DDT;4,4’-DDE;狄氏剂;硫丹 I;硫丹 II;硫丹硫酸盐;七氯;环氧七氯(B);毒杀芬;异狄氏剂;狄氏剂</td>
+                <td >5-500ug/Kg</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+ 		<thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="1">SQCO-004</td>
+                <td rowspan="1">土壤中毒杀芬</td>
+                <td rowspan="1">30g</td>
+                <td >★毒杀芬</td>
+                <td >100-500ug/kg</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCI-017</td>
+                <td rowspan="1">土壤中氰化物</td>
+                <td rowspan="1">50g</td>
+                <td >★总氰化物</td>
+                <td >25-500mg/kg</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCI-016</td>
+                <td rowspan="1">土壤中多环芳烃</td>
+                <td rowspan="1">30g</td>
+                <td >★萘;二氢苊;苊;蒽;苯并(a)蒽;苯并(a)芘;苯并(b)荧蒽;苯并(g,h,i)苝;苯并(k)荧蒽;屈;二苯并(a,h)蒽;荧蒽;芴;茚并(1,2,3-cd)芘;菲;芘</td>
+                <td >10-1000ug/kg</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCO-006</td>
+                <td rowspan="1">土壤中除草剂</td>
+                <td rowspan="1">30g</td>
+                <td >★五氯苯酚;MCPP;2,4-D;茅草枯;2,4-DB;麦草畏;DNBP;2,4,5-TP;2,4,5-T</td>
+                <td >5-500ug/kg</td>
+            </tr>
+             <tr>
+                <td rowspan="1">SQCO-009</td>
+                <td rowspan="1">土壤中氯丹</td>
+                <td rowspan="1">30g</td>
+                <td >★氯丹</td>
+                <td >100-500ug/kg</td>
+            </tr>
+        </tbody>
+  </table>      
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+       <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="11">SQCI-005</td>
+                <td rowspan="11">土壤中固体废弃物金属</td>
+                <td rowspan="11">100g</td>
+                <td >★锑</td>
+                <td >0.2-20mg/L</td>
+            </tr>
+            <tr>
+                <td >★砷</td>
+                <td >0.5-40mg/L</td>
+            </tr>
+            <tr>
+                <td >★钡</td>
+                <td >0.5-500mg/L</td>
+            </tr>
+            <tr>
+                <td >★铍</td>
+                <td >0.1-5mg/L</td>
+            </tr>
+            <tr>
+                <td >★镉</td>
+                <td >0.5-50mg/L</td>
+            </tr>
+            <tr>
+                <td >★铬</td>
+                <td >0.5-50mg/L</td>
+            </tr>
+            <tr>
+                <td >★铅</td>
+                <td >0.5-150mg/L</td>
+            </tr>
+            <tr>
+                <td >★汞</td>
+                <td >0.05-10mg/L</td>
+            </tr>
+            <tr>
+                <td >★硒</td>
+                <td >0.5-10mg/L</td>
+            </tr>
+            <tr>
+                <td >★银</td>
+                <td >0.2-40mg/L</td>
+            </tr>
+            <tr>
+                <td >★锌</td>
+                <td >0.5-30mg/L</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCO-018</td>
+                <td rowspan="1">土壤中硫化物</td>
+                <td rowspan="1"></td>
+                <td >★硫化物</td>
+                <td >5-500mg/kg</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCO-008</td>
+                <td rowspan="1">土壤中挥发性有机物</td>
+                <td rowspan="1">15g</td>
+                <td >★丙酮;对-1,2-二氯乙烯;乙腈;乙苯;丙烯醛;六氯乙烷;TAME;2-己酮;苯;异丙苯;溴苯;溴化甲烷;溴化二氯甲烷;三溴甲烷;氯甲烷;二氯甲烷;2-丁酮;4-甲基-2-戊酮;二硫化碳;MTBE甲基叔丁基醚;四氯化碳;苯乙烯;氯苯;1,1,1,2-四氯乙烷;氯乙烷; 1,1,2,2-四氯乙烷;(2-氯乙基)乙烯醚;四氯乙烯;氯仿;甲苯;1,2-二溴-3-氯丙烷;1,2, 4-三氯代苯;二溴氯甲烷;1,1,1-三氯乙烷;1,2-二溴乙烷; 1,1,2-三氯乙烷;二溴甲烷;三氯乙烯;1,2-二氯代苯;三氯氟甲烷;1,3-二氯代苯;三氯丙烷; 1,4-二氯代苯; 1,2,4-三甲基苯;二氯二氟甲烷; 1,3,5-三甲苯; 1,1-二氯乙烷;醋酸乙烯; 1,2-二氯乙烷;氯乙烯;二氯乙烯; m+p-二甲苯;邻1,2-二氯乙烯; O-二甲苯; 1,2-二氯丙烷;总二甲苯;顺-1,3二氯丙烯;异丙醚;反式-1,3-二氯丙烯</td>
+                <td >100-17000ug/kg</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCO-007</td>
+                <td rowspan="1">土壤中半挥发性有机物</td>
+                <td rowspan="1">30g</td>
+                <td >★2-氨基-1-甲苯;3,3'-二氯联苯胺;1,2-二氯代苯;2,4-二氯酚;1,3-二氯代苯;2,6-二氯苯酚;1,4-二氯代苯;邻苯二甲酸二乙酯;六氯丁二烯;六氯-1,3-丁二烯;2,4-二甲苯酚;六氯乙烷;邻苯二甲酸二甲酯;萘;2,4-二硝基酚;硝基苯;2,4-DNT;吡啶;2,6-DNT;1,2,4 –三氯代苯;邻苯二甲酸二辛酯;苊;萘嵌戊烷;邻苯二甲酸二(2-乙基已基)酯(DEHP);苊烯;荧蒽;苯胺;芴;蒽;六氯苯;苯并(a)蒽;六氯环戊二烯;苯并(a)芘;茚并[1,2,3-cd]芘;苯并(a) 荧蒽;异佛乐酮;苯并(g,h,i)芘;对苯二氨基联苯;2-甲基-4,6-二硝基酚;苯并(k) 荧蒽;2-甲基萘;苯并(b+k) 荧蒽;2-甲酚;邻羟基甲苯;安息香酸;苯(甲)酸;m-甲酚;苯甲醇;p-甲酚;4-溴苯基醚;m+p-苯酚;邻苯二甲酸丁基苄酯;2-硝基苯胺;咔唑;3-硝基苯胺;4-氯-3-甲基苯酚;4-硝基苯胺;4-氯苯胺;2-硝基酚;双(2-氯乙氧基)甲烷;3-硝基酚;双(2-氯乙基)醚;4-硝基酚;双(2-氯异丙基)醚;n-亚硝基二甲胺;1-氯萘;n-亚硝基二苯胺;2-氯萘;N-亚硝基正丙胺;2-氯酚;五氯苯酚;4-氯苯基苯基醚;菲;屈;苯酚;二苯并[A,H]蒽;芘;氧芴;2,4,5-三氯苯酚;邻苯二甲酸二丁酯;2,4,6-三氯苯酚</td>
+                <td >500-17000ug/kg</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCO-021</td>
+                <td rowspan="1">土壤中有机磷</td>
+                <td rowspan="1">30g</td>
+                <td >★谷硫磷;二溴磷;二嗪农;甲拌磷;EPN;硫特普;倍硫磷;敌百虫;马拉硫磷;内吸磷-s;甲基对硫磷;乙拌磷;杀虫畏;伐灭磷;内吸磷-O</td>
+                <td >100-1000ug/kg</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="1">SQCI-037</td>
+                <td rowspan="1">土壤中石油及油脂类</td>
+                <td rowspan="1">50g</td>
+                <td >★石油及油脂</td>
+                <td rowspan="1"></td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCI-140</td>
+                <td rowspan="1">土壤中总石油烃(TPH)</td>
+                <td rowspan="1">50g</td>
+                <td >★总石油烃</td>
+                <td rowspan="1">300-3000mg/kg</td>
+            </tr>
+            <tr>
+                <td rowspan="1">SQCO-015-PEST</td>
+                <td rowspan="1">固体废弃物农药</td>
+                <td rowspan="1">100g</td>
+                <td >★γ-六六六(林丹);总氯丹;异狄氏剂;七氯;环氧七氯;甲氧滴滴涕;毒杀芬</td>
+                <td rowspan="1"></td>
+            </tr>
+             <tr>
+                <td rowspan="1">SQCO-015-HERB</td>
+                <td rowspan="1">固体废弃物除草剂</td>
+                <td rowspan="1">100g</td>
+                <td >★2,4,5-涕丙酸;2,4-D</td>
+                <td rowspan="1"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

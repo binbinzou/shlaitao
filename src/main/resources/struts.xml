@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.configuration.xmlreload" value="true" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.ui.theme" value="xhtml" />
+	<constant name="struts.multipart.maxSize" value="10485760"/><!-- 10M --> 
+
+  <package name="default" extends="json-default,struts-default">
+  
+  	<interceptors>
+        
+        <interceptor name="authInterceptor" class="com.shlaitao.base.interceptor.AuthInterceptor"/>
+        <interceptor-stack name="myStack">
+           <interceptor-ref name="defaultStack"/>
+           <interceptor-ref name="authInterceptor"/>
+        </interceptor-stack>
+        </interceptors>
+	
+	<default-interceptor-ref name="myStack"></default-interceptor-ref>
+  
+	<!-- 登录 -->
+	<action name="user" class="com.shlaitao.user.action.UserAction">
+		<result name="success" type="json">
+			<param name="ignoreHierarchy">false</param>
+		</result>
+		<result name="render" >${renderAction}</result>
+		<result name="error">error.jsp</result>
+	</action>	
+	
+	<action name="imgUpload" class="com.shlaitao.imgs.action.ImgUploadAction">
+		
+	</action>
+   	<action name="img"  class="com.shlaitao.imgs.action.ImgAction">
+   		<result name="success" type="json">
+			<param name="ignoreHierarchy">false</param>
+		</result>
+		<result name="render" >${renderAction}</result>
+   		<result name="filesuccess" type="json">
+   			  <param name="contentType" >text/html</param>
+   			    <param name ="excludeNullProperties" > true</param>
+                         <param name ="ignoreHierarchy" > false</param>
+                         <param name ="root" >result</param>
+   		</result>
+   		<result name="FILEOUTERROR" type="json">
+   			<param name="root">fileSizeOutJson</param>
+   		</result>
+   		<result name="error">error.jsp</result>
+   	</action>
+	<action name="news" class="com.shlaitao.news.action.NewsAction">
+		<result name="success" type="json">
+			<param name="ignoreHierarchy">false</param>
+		</result>
+		<result name="render" >${renderAction}</result>
+		<result name="error">error.jsp</result>
+	</action>
+	<action name="techdata" class="com.shlaitao.techdata.action.TechdataAction">
+		<result name="success" type="json">
+			<param name="ignoreHierarchy">false</param>
+		</result>
+		<result name="render" >${renderAction}</result>
+		<result name="error">error.jsp</result>
+	</action>
+	<action name="product" class="com.shlaitao.product.action.ProductAction">
+		<result name="success" type="json">
+			<param name="ignoreHierarchy">false</param>
+		</result>
+		<result name="render" >${renderAction}</result>
+		<result name="error">error.jsp</result>
+	</action>
+	<action name="productType" class="com.shlaitao.product.action.ProductTypeAction">
+		<result name="success" type="json">
+			<param name="ignoreHierarchy">false</param>
+		</result>
+		<result name="render" >${renderAction}</result>
+		<result name="error">error.jsp</result>
+	</action>
+	<action name="admin" class="com.shlaitao.base.action.AdminAction">
+		<result name="render" >${renderAction}</result>
+		<result name="error">error.jsp</result>
+	</action>
+	<!-- 更新密码 -->
+	<!-- <action name="user" class="com.shlaitao.user.action.UserAction" method="updatePassword">
+		<result type="json">index.jsp</result>
+	</action> -->
+	<!-- 登出 -->
+	<!--<action name="user" class="com.shlaitao.user.action.UserAction" method="logout">
+		<result name="success">index.jsp</result>
+	</action> -->
+</package>
+</struts>
+
+

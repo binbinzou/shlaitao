@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="user" >
+  <resultMap id="BaseResultMap" type="com.shlaitao.user.domain.TUser" >
+    <id column="ID" property="id" jdbcType="INTEGER" />
+    <result column="USERNAME" property="username" jdbcType="VARCHAR" />
+    <result column="PASSWORD" property="password" jdbcType="VARCHAR" />
+    <result column="NEW_PASSWORD" property="newPassword" jdbcType="VARCHAR" />
+    <result column="STATUS" property="status" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID,USERNAME, PASSWORD, STATUS
+  </sql>
+  <select id="queryByUserName" resultMap="BaseResultMap" parameterType="com.shlaitao.user.domain.TUser" >
+		select * from t_base_user 
+		where USERNAME = #{username,jdbcType=VARCHAR}
+  </select>
+  <select id="queryByUserId" resultMap="BaseResultMap" parameterType="com.shlaitao.user.domain.TUser" >
+		select * from t_base_user 
+		where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <update id="updatePassword" parameterType="com.shlaitao.user.domain.TUser" >
+    update t_base_user
+    set PASSWORD = #{newPassword,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  
+  <insert id="add" parameterType="com.shlaitao.user.domain.TUser">
+  	insert into t_base_user(USERNAME, PASSWORD) values('add','qqqqqq')
+  </insert>
+  
+</mapper>

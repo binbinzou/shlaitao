@@ -1,0 +1,23 @@
+<style type="text/css">
+.letter-p {
+    text-align: left;
+    padding: 20px 23px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.letter-tlt {
+    display: block;
+    width: 900px;
+    text-align: center;
+    font-size: 18px;
+}
+body{
+	    padding-top: 10px;
+width: 1008px;
+	margin:0 auto;
+	background: url(../../images/box_bj.jpg) repeat;
+	font-family:Microsoft YaHei;
+}
+</style>

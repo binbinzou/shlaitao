@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" href="css/self/css.css" rel="stylesheet">
+<link type="text/css" href="css/ext/nivo-slider.css" rel="stylesheet">
+<link type="text/css" href="css/ext/pagination.css" rel="stylesheet">
+<link type="text/css" href="css/self/main.css" rel="stylesheet">
+<script type="text/javascript" src="js/ext/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="js/ext/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/self/other.js"></script>
+<script type="text/javascript" src="js/ext/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="js/ext/jquery.pagination.js"></script>
+<script type="text/javascript" src="js/self/data.js"></script>
+<title>技术资料</title>
+</head>
+<style type="text/css">
+.file{color:rgb(0, 162, 230)}
+</style>
+<body>
+<div class="main" id = "main">
+<div class="scon-banner">
+<div class="imgText">
+	<h3>技术资料</h3>
+	<h5>Technical data
+	</h5>
+</div>
+<img src="images/jszl.jpg" alt="">
+</div>
+<div id="other_box" >
+                     <div class="main_left">
+                   <!--  <div class="cpl_title">产品系列</div> -->
+                    <div class="gsjj_tit1">产品系列</div>
+                    <div class="cpl">
+                            <div class="left"> 
+	                             <div class="div1" id="productType">
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('8,水质监测标液')">水质监测标液</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('7,空气检测标液')">空气检测标液</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('4,水质监测标样')">水质监测标样</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('3,土壤检测标样')">土壤检测标样</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('2,常规检测')">常规检测</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('1,实验室常规标液')">实验室常规标液</a></div>
+	                            </div>
+                            </div>
+
+                            <!--产品下拉结束-->
+
+                    </div>
+                </div>
+                <div class="main_right" id="main_right">
+                    <div class="daohang">您现在的位置：<a href="#" onclick="back_page('firstMiddle.html');">网站首页</a> &gt;  技术资料</div>
+                    
+                    <div id="hiddenresult" style="margin-left:-10px;    padding-right: 5px;">
+	                     <div class="result" style="padding-top: 10px;padding-bottom: 10px;">
+	                       <ul class="ra-ul fl marTop20" id="data_ul">
+						    <!-- <li><img src="./images/news1.png">&nbsp;<a href="dataFile/technology/W020160520319682941034.pdf" target="_blank">环境空气和废气 酰胺类化合物的测定 液相色谱法(HJ 801-2016)</a></li>
+						    <li><img src="./images/news1.png">&nbsp;<a href="dataFile/technology/W020160519531058998154.pdf" target="_blank">环境空气 颗粒物中水溶性阴离子（F-、Cl-、Br-、NO2-、NO3-、PO43-、SO32-、SO42-）的测定 离子色谱法(HJ 799-2016)</a></li>
+						    <li><img src="./images/news1.png">&nbsp;<a href="dataFile/technology/W020160519532975143979.pdf" target="_blank">水质 二氧化氯和亚氯酸盐的测定 连续滴定碘量法(HJ 551-2016代替HJ 551-2009)</a></li>
+						    <li><img src="./images/news1.png">&nbsp;<a href="dataFile/technology/W020160519550495662494.pdf" target="_blank">环境空气和废气 氯化氢的测定 离子色谱法(HJ 549-2016代替HJ 549-2009)</a></li>
+						    <li><img src="./images/news1.png">&nbsp;<a href="dataFile/technology/W020160519553799940783.pdf" target="_blank">固定污染源废气 氯化氢的测定 硝酸银容量法(HJ 548-2016代替HJ 548-2009)</a></li>
+						    <li><img src="./images/news1.png">&nbsp;<a href="dataFile/technology/W020160510519061748011.pdf" target="_blank">生物多样性观测技术导则 水生维管植物(HJ 710.12—2016)</a></li> -->
+							</ul>
+						</div>
+						<script id="Template" type="text/x-jquery-tmpl"> 
+						<li><img src="./images/news1.png">&nbsp;<a href="javascript:void(0)" onclick="openData(${id});" ><span>${createtime}</span>${title} </a></li>
+						</script> 
+					 	<div id="Pagination" style="text-align:center;padding-bottom: 10px;" class="pagination"><!-- 这里显示分页 --></div>
+                    </div>
+                    <div id="dataMsg" style="display:none;margin-left: -10px;padding-top: 30px;padding-bottom: 10px;">
+						<div class="newsend-btn">
+							<a href="" class="t" id="before" onclick=>上一条</a>
+							<a href="" class="btn">返&nbsp;&nbsp;回</a>
+							<a href="" class="t" id="after">下一条</a>
+						</div>
+						<br>
+						<div id="dataContent" class="dataContent" style="padding-bottom: 10px;">
+						</div>
+						
+					</div>	
+                </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+	</typeAliases>
+	<plugins>
+		<plugin interceptor="com.shlaitao.mybatis.dao.PageHelperMysql"></plugin>
+	</plugins>
+	<mappers>
+		<mapper resource="com/shlaitao/user/sqlmap/user.xml" />
+		<mapper resource="com/shlaitao/news/sqlmap/news.xml" />
+		<mapper resource="com/shlaitao/techdata/sqlmap/techdata.xml" />
+		<mapper resource="com/shlaitao/product/sqlmap/product.xml" />
+		<mapper resource="com/shlaitao/product/sqlmap/productType.xml" />
+		<mapper resource="com/shlaitao/imgs/sqlmap/img.xml" />
+	</mappers>
+	
+</configuration> 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="productType" >
+  <resultMap id="BaseResultMap" type="com.shlaitao.product.domain.TProductType" >
+    <id column="ID" property="id" jdbcType="INTEGER" />
+    <result column="TYPENAME" property="typename" jdbcType="VARCHAR" />
+    <result column="TYPEDESC" property="typedesc" jdbcType="VARCHAR" />
+    <result column="STATUS" property="status" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID,TYPENAME, DESC,STATUS
+  </sql>
+  <select id="query" resultMap="BaseResultMap" parameterType="com.shlaitao.product.domain.TProductType">
+	  select * from t_base_producttype
+	  <where>
+	  	STATUS ='1'
+	  	<if test="typename != null and typename != ''">
+	  	and TYPENAME like '%${typename}%'
+	  	</if>
+	  </where>
+	  order by ID desc
+  </select>
+  <select id="queryDetail"  resultMap="BaseResultMap" parameterType="com.shlaitao.product.domain.TProductType">
+  	select * from t_base_producttype 
+  	where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <insert id="insert" parameterType="com.shlaitao.product.domain.TProductType">
+  insert into t_base_producttype(TYPENAME, TYPEDESC,STATUS) values(#{typename,jdbcType=VARCHAR}
+	,#{typedesc,jdbcType=VARCHAR},#{status,jdbcType=VARCHAR})
+<!-- 	insert into t_base_producttype(TYPENAME, DESC,STATUS) values(#{typename,jdbcType=VARCHAR}
+	,#{desc,jdbcType=VARCHAR},#{status,jdbcType=VARCHAR}) -->
+  </insert>
+  <update id="update" parameterType="com.shlaitao.product.domain.TProductType">
+  	update t_base_producttype set TYPENAME = #{typename,jdbcType=VARCHAR},TYPEDESC = #{typedesc,jdbcType=VARCHAR}
+  	where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <delete id="delete" parameterType="com.shlaitao.product.domain.TProductType">
+  update t_base_producttype set STATUS='0' where ID = #{id,jdbcType=INTEGER}
+  </delete>
+</mapper>

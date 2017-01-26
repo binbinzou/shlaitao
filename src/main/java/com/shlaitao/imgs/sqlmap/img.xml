@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="img" >
+  <resultMap id="BaseResultMap" type="com.shlaitao.imgs.domain.TImgs" >
+    <id column="ID" property="id" jdbcType="INTEGER" />
+    <result column="NAME" property="name" jdbcType="VARCHAR" />
+    <result column="URL" property="url" jdbcType="VARCHAR" />
+    <result column="STATUS" property="status" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID,NAME, URL, STATUS
+  </sql>
+  <select id="query" resultMap="BaseResultMap" parameterType="com.shlaitao.imgs.domain.TImgs">
+	  select * from t_base_img 
+	  <where>
+	  	status = '1'
+	  	<if test="name != null and name != ''">
+	  	AND NAME like '%${name}%'
+	  	</if>
+	  </where>
+	  order by ID desc
+  </select>
+  <select id="queryDetail"  resultMap="BaseResultMap" parameterType="com.shlaitao.imgs.domain.TImgs">
+  	select * from t_base_img 
+  	where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <insert id="insert" parameterType="com.shlaitao.imgs.domain.TImgs">
+	insert into t_base_img(NAME, URL, STATUS) values(#{name,jdbcType=VARCHAR}
+	,#{url,jdbcType=VARCHAR},#{status,jdbcType=VARCHAR})
+  </insert>
+  <update id="update" parameterType="com.shlaitao.imgs.domain.TImgs">
+  	update t_base_img set NAME = #{name,jdbcType=VARCHAR}
+  	<if test="url != null and url != ''">
+  	  	,URL = #{url,jdbcType=VARCHAR}
+  	</if>
+  	where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <delete id="delete" parameterType="com.shlaitao.imgs.domain.TImgs">
+  update t_base_img set STATUS='0' where ID = #{id,jdbcType=INTEGER}
+  </delete>
+</mapper>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" href="css/self/css.css" rel="stylesheet">
+<link type="text/css" href="css/ext/nivo-slider.css" rel="stylesheet">
+<link type="text/css" href="css/ext/pagination.css" rel="stylesheet">
+<link type="text/css" href="css/self/main.css" rel="stylesheet">
+<script type="text/javascript" src="js/ext/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="js/ext/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/ext/jquery.pagination.js"></script>
+<script type="text/javascript" src="js/self/other.js"></script>
+<script type="text/javascript" src="js/ext/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="js/ext/jquery.pagination.js"></script>
+<script type="text/javascript" src="./js/self/news.js"></script>
+<title>新闻中心</title>
+</head>
+<body>
+<div class="main" id = "main">
+<div class="scon-banner">
+<div class="imgText">
+	<h3>新闻中心</h3>
+	<h5>News center
+	</h5>
+</div>
+<img src="images/xwzx.jpg" alt="">
+</div>
+<div id="other_box" >
+          <div class="main_left">
+                    <!-- <div class="cpl_title">产品系列</div> -->
+                     <div class="gsjj_tit1">产品系列</div>
+                    <div class="cpl">
+                            <div class="left"> 
+	                             <div class="div1" id="productType">
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('8,水质监测标液')">水质监测标液</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('7,空气检测标液')">空气检测标液</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('4,水质监测标样')">水质监测标样</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('3,土壤检测标样')">土壤检测标样</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('2,常规检测')">常规检测</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('1,实验室常规标液')">实验室常规标液</a></div>
+	                            </div>
+                            </div>
+
+                            <!--产品下拉结束-->
+
+                    </div>
+                </div>
+          <div class="main_right">
+                    <div class="daohang">您现在的位置：<a href="#" onclick="back_page('firstMiddle.html');">网站首页</a> &gt; 新闻中心</div>
+                   <div id="hiddenresult" style="margin-left:-10px;    padding-right: 5px;">
+                   <div class="result" style="padding-top: 10px;padding-bottom: 10px;">
+						<ul class="ra-ul fl marTop20" id="news_ul">
+					    <!-- <li><img src="./images/news1.png">&nbsp;<a href="news/new1.jsp" target="_blank"><span>2016.09.16</span>标准物质使用中的常见问题解答 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="news/new2.jsp" target="_blank"><span>2016.06.02</span>“蛋白和肽类药物及诊断试剂研发与质控”国际研讨会在成都召开 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="news/new3.jsp" target="_blank"><span>2016.03.21</span>白酒色谱成分分析标准物质在毛细管柱气相色谱法的应用 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="news/new4.jsp" target="_blank"><span>2015.11.30</span>“化学砝码”知多少？访中国计量科学研究院化学所李红梅所长 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="news/new5.jsp" target="_blank"><span>2015.09.29</span>第15届中日韩标准物质合作会议在韩国召开 </a></li>
+					     <li><img src="./images/news1.png">&nbsp;<a href="news/new6.jsp" target="_blank"><span>2015.07.14</span>“化学计量及标准物质十三五发展规划交流讨论会”举行 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="news/new7.jsp" target="_blank"><span>2015.06.01</span>第一届国家气体标准物质研制及应用技术研讨会召开 </a></li> -->
+					    </ul>
+					</div>
+					<script id="Template" type="text/x-jquery-tmpl"> 
+						<li><img src="./images/news1.png">&nbsp;<a href="javascript:void(0)" onclick="openNew(${id});" ><span>${createtime}</span>${title} </a></li>
+					</script> 
+					 <div id="Pagination" style="text-align:center;padding-bottom: 10px;" class="pagination"><!-- 这里显示分页 --></div>
+					</div>
+				<div id="newsMsg" style="display:none;margin-left: -10px;padding-top: 30px;padding-bottom: 10px;">
+					<div class="newsend-btn">
+						<a href="" class="t" id="before" onclick=>上一条</a>
+						<a href="" class="btn">返&nbsp;&nbsp;回</a>
+						<a href="" class="t" id="after">下一条</a>
+					</div>
+					<br>
+					<div id="newsContent" class="newsContent" style="padding-bottom: 10px;">
+					</div>
+					
+				</div>	
+                   
+          </div>
+</div>
+</div>
+</body>
+</html>

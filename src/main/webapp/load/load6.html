@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/self/main.js"></script>
+<title>水质监测标液</title>
+</head>
+<body onload="loadPage();">
+<style type="text/css">
+.duohang{width:200px;}
+td{word-wrap:break-word;word-break:break-all;}
+</style>
+<div class="result">
+<table id="example" class="display"  border="1"  cellspacing="0" >
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+               <tr><td rowspan="2">Q-8223-O</td><td rowspan="2">6项有机磷农药混标</td><td rowspan="2">丙酮*1.5mL</td><td>★敌百虫;敌敌畏;乐果</td><td>200ug/mL</td></tr>
+			 <tr><td>★对硫磷;甲基对硫磷;马拉硫磷</td><td>100ug/mL</td></tr>
+			 <tr><td>Q-7766-O</td><td>滴滴涕六六六混标</td><td>正己烷*1.5mL</td><td>★2,4'-DDT; 4,4'-DDD; 4,4'-DDE; 4,4'-DDT; alpha-六六六; beta-六六六; delta-六六六; gamma-六六六（林丹）</td><td>100ug/mL</td></tr>
+			 <tr><td>Q-7533-O</td><td>有机磷农药混标</td><td>丙酮*1.5mL</td><td>★敌敌畏;毒死蜱;对硫磷;甲基对硫磷;乐果;马拉硫磷;莠去津</td><td>200ug/mL</td></tr>
+			 <tr><td rowspan="3">Q-6842-O</td><td rowspan="3">7项有机磷农药混标</td><td rowspan="3">丙酮*1.5mL</td><td>★敌敌畏</td><td>100ug/mL</td></tr>
+			 <tr><td>★敌百虫;毒死蜱;对硫磷</td><td>200ug/mL</td></tr>
+			 <tr><td>★甲基对硫磷;乐果;马拉硫磷</td><td>1000ug/mL</td></tr>
+			 <tr><td>Q-6844-O</td><td>有机氯农药及氯代苯</td><td>甲醇*1.5mL</td><td>★1,2,3-三氯苯; 1,2,4-三氯苯; 1,3,5-三氯苯; 2,4'-DDT; 4,4'-DDD; 4,4'-DDE; 4,4'-DDT; alpha-六六六; beta-六六六; delta-六六六; amma-六六六（林丹）;百菌清;六氯苯</td><td>100ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+ 		<thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr><td rowspan="2">Q-7007-O</td><td rowspan="2">4 项农药混标</td><td rowspan="2">1.5mL</td><td>★百菌清</td><td>100ug/mL</td></tr>
+		 <tr><td>★六氯苯；七氯；溴氰菊酯</td><td>1000ug/mL</td></tr>
+		 <tr><td>Q-7534-O</td><td>有机氯农药混标</td><td>甲醇*1.5mL</td><td>★2,4'-DDT； 4,4'-DDD； 4,4'-DDE； 4,4'-DDT； alpha-六六六； beta-六六六； delta-六六六； gamma-六六六（林丹）；百菌清；六氯苯；七氯；溴氰菊酯</td><td>100ug/mL</td></tr>
+		 <tr><td>S3603H</td><td>溴氰菊酯标准溶液</td><td>甲醇*1.5mL</td><td>★溴氰菊酯</td><td>1000ug/mL</td></tr>
+		 <tr><td>Q-7699-O</td><td>2,4-滴标准溶液</td><td>甲醇*1.5mL</td><td>★2,4-D</td><td>100ug/mL</td></tr>
+		 <tr><td>S3605</td><td>六氯苯标准溶液</td><td>甲醇*1.5mL</td><td>★六氯苯</td><td>100ug/mL</td></tr>
+        </tbody>
+  </table>      
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+       <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>S3606</td><td>林丹（γ-六六六）标准溶液</td><td>甲醇*1.5mL</td><td>★gamma-六六六（林丹）</td><td>100ug/mL</td></tr>
+			<tr><td>S3607</td><td>甲胺磷标准溶液</td><td>丙酮*1.5mL</td><td>★甲胺磷</td><td>100ug/mL</td></tr>
+			<tr><td>S3608L</td><td>莠去津标准溶液</td><td>甲醇*1.5mL</td><td>★莠去津</td><td>100ug/mL</td></tr>
+			<tr><td>Q-7706-O</td><td>灭草松标准溶液</td><td>丙酮*1.5mL</td><td>★灭草松</td><td>1000ug/mL</td></tr>
+			<tr><td>S3613</td><td>百菌清标准溶液</td><td>甲醇*1.5mL</td><td>★百菌清</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Q-8093-O</td><td>乐果</td><td>丙酮*1.5mL</td><td>★乐果</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3615</td><td>七氯标准溶液</td><td>甲醇*1.5mL</td><td>★七氯</td><td>1000ug/mL</td></tr>
+		 <tr><td>Q-8094-O</td><td>马拉硫磷标准溶液</td><td>丙酮*1.5mL</td><td>★马拉硫磷</td><td>1000ug/mL</td></tr>
+		 <tr><td>Q-8095-O</td><td>对硫磷标准溶液</td><td>丙酮*1.5mL</td><td>★对硫磷</td><td>1000ug/mL</td></tr>
+		 <tr><td>Q-8096-O</td><td>甲基对硫磷标准溶液</td><td>丙酮*1.5mL</td><td>★甲基对硫磷</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Q-7754-O</td><td>内吸磷标准溶液</td><td>丙酮*1.5mL</td><td>★内吸磷-S</td><td>1000ug/mL</td></tr>
+			 <tr><td>Q-7710-O</td><td>呋喃丹标准溶液</td><td>乙腈*1.5mL</td><td>★呋喃丹</td><td>1000ug/mL</td></tr>
+			 <tr><td>Q-8097-O</td><td>毒死蜱标准溶液</td><td>丙酮*1.5mL</td><td>★毒死蜱</td><td>1000ug/mL</td></tr>
+			 <tr><td>Q-8098-O</td><td>敌敌畏标准溶液</td><td>丙酮*1.5mL</td><td>★敌敌畏</td><td>1000ug/mL</td></tr>
+			 <tr><td>Q-8099-O</td><td>敌百虫标准溶液</td><td>丙酮*1.5mL</td><td>★敌百虫</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr><td>1215H</td><td>草甘膦标准溶液</td><td>1.5mL</td><td>★草甘膦</td><td>1000ug/mL</td></tr>
+			 <tr><td>Q-7576-O</td><td>甲萘威标准溶液</td><td>甲醇*1.5mL</td><td>★甲萘威</td><td>1000ug/mL</td></tr>
+			 <tr><td>S99</td><td>环氧七氯 (Isomer B) 标准溶液</td><td>甲醇*1.5mL</td><td>★环氧七氯(B)</td><td>1000ug/mL</td></tr>
+			 <tr><td>C-388</td><td>三卤甲烷混标</td><td>甲醇*1.5mL</td><td>★二氯溴甲烷；氯仿；三溴甲烷；一氯二溴甲烷</td><td>2000 ug/mL</td></tr>
+			 <tr><td>C-388L</td><td>三卤甲烷混标</td><td>甲醇*1.5mL</td><td>★二氯溴甲烷；氯仿；三溴甲烷；一氯二溴甲烷</td><td>200ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr><td>Q-7705-O</td><td>2项酚类化合物混标</td><td>甲醇*1.5mL</td><td>★2,4,6-三氯酚；五氯苯酚</td><td>200ug/mL</td></tr>
+			 <tr><td>S3601</td><td>甲醛标准溶液</td><td>水*1.5mL</td><td>★甲醛</td><td>100ug/mL</td></tr>
+			 <tr><td>Q-7543-O</td><td>二氯乙酸标准溶液</td><td>甲基叔丁基醚*1.5mL</td><td>★二氯乙酸</td><td>100ug/mL</td></tr>
+			 <tr><td>Q-7544-O</td><td>三氯乙酸标准溶液</td><td>甲基叔丁基醚*1.5mL</td><td>★三氯乙酸</td><td>100ug/mL</td></tr>
+			 <tr><td>Q-7535-O</td><td>四氯化碳标准溶液</td><td>甲醇*1.5mL</td><td>★四氯化碳</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr><td>S3672</td><td>一氯二溴甲烷标准溶液</td><td>甲醇*1.5mL</td><td>★一氯二溴甲烷</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3673</td><td>二氯溴甲烷标准溶液</td><td>甲醇*1.5mL</td><td>★二氯溴甲烷</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3675</td><td>二氯甲烷标准溶液</td><td>甲醇*1.5mL</td><td>★二氯甲烷</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3701</td><td>乙醛标准溶液</td><td>水*1.5mL</td><td>★乙醛</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3702</td><td>二氯乙酸标准溶液</td><td>水*1.5mL</td><td>★二氯乙酸</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	 <tr><td>S3703</td><td>三氯乙酸标准溶液</td><td>水*1.5mL</td><td>★三氯乙酸</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3719</td><td>水合氯醛(三氯乙醛)标准溶液</td><td>乙腈*1.5mL</td><td>★水合氯醛</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3737</td><td>二氯乙酸甲酯标准溶液</td><td>甲基叔丁基醚*1.5mL</td><td>★二氯乙酸甲酯</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3738</td><td>三氯乙酸甲酯标准溶液</td><td>甲基叔丁基醚*1.5mL</td><td>★三氯乙酸甲酯</td><td>1000ug/mL</td></tr>
+		 <tr><td>Q-8233-O</td><td>1,2-二溴丙烷</td><td>甲基叔丁基醚*1mL</td><td>★1,2-二溴丙烷</td><td>100ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	  <tr><td>Q-7536-O</td><td>25项挥发性有机物混标</td><td>甲醇*1.5mL</td><td>★1,1,1-三氯乙烷； 1,1,2-三氯乙烷； 1,1-二氯乙烯； 1,2-二氯苯； 1,2-二氯乙烷； 1,4-二氯苯；苯；苯乙烯；对-二甲苯；二氯甲烷；二氯溴甲烷；反-1,2-二氯乙烯；甲苯；间-二甲苯；邻-二甲苯；六氯丁二烯；氯苯；氯仿；氯乙烯；三氯乙烯；三溴甲烷；顺-1,2-二氯乙烯；四氯乙烯；一氯二溴甲烷；乙苯</td><td>100ug/mL</td></tr>
+			 <tr><td rowspan="6">Q-7707-O</td><td rowspan="6">6 项多环芳烃混标</td><td rowspan="6">甲醇*1.5mL</td><td>★苯并(a)芘</td><td>50ug/mL</td></tr>
+			 <tr><td>★苯并(b)荧蒽</td><td>50ug/mL</td></tr>
+			 <tr><td>★苯并(g,h,i)苝</td><td>100ug/mL</td></tr>
+			 <tr><td>★苯并(k)荧蒽</td><td>20ug/mL</td></tr>
+			 <tr><td>★茚并(1,2,3-cd)芘</td><td>100ug/mL</td></tr>
+			 <tr><td>★荧蒽</td><td>50ug/mL</td></tr>
+			 <tr><td>Q-7537-O</td><td>三氯苯混标</td><td>甲醇*1.5mL</td><td>★1,2,3-三氯苯； 1,2,4-三氯苯；1,3,5-三氯苯</td><td>100ug/mL</td></tr>
+			 <tr><td rowspan="2">M4607</td><td rowspan="2">氯仿；四氯化碳混标</td><td rowspan="2">甲醇*1.5mL</td><td>★氯仿</td><td>10ug/mL</td></tr>
+			 <tr><td>★四氯化碳</td><td>0.5ug/mL</td></tr>
+			 <tr><td>Q-8089-O</td><td>四氯苯混标</td><td>甲醇*1.5mL</td><td>★1,2,3,4-四氯苯； 1,2,3,5-四氯苯； 1,2,4,5-四氯苯</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	  <tr><td>M4610</td><td>二硝基苯混标</td><td>甲醇*1.5mL</td><td>★1,2-二硝基苯； 1,3-二硝基苯； 1,4-二硝基苯</td><td>1000ug/mL</td></tr>
+			 <tr><td>Q-6672-O</td><td>硝基氯苯混标</td><td>甲醇*1.5mL</td><td>★对硝基氯苯；间硝基氯苯；邻硝基氯苯</td><td>1000ug/mL</td></tr>
+			 <tr><td>M4618</td><td>硝基苯类混标</td><td>甲醇*1.5mL</td><td>★1,2-二硝基苯； 1,3-二硝基苯； 1,4-二硝基苯； 2,4,6-三硝基甲苯； 2,4-二硝基甲苯； 2,4-二硝基氯苯；对硝基氯苯；间硝基氯苯；邻硝基氯苯；硝基苯</td><td>1000ug/mL</td></tr>
+			 <tr><td>M-47525-U</td><td>(±)-土臭素和2-甲基异莰醇混标</td><td>甲醇*1mL</td><td>★2-甲基异莰醇；土臭素</td><td>100ug/mL</td></tr>
+			 <tr><td>M95124</td><td>三氯乙烯&四氯乙烯混标</td><td>1mL</td><td>★三氯乙烯；四氯乙烯</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	 <tr><td>M95129</td><td>11项挥发性有机物混标</td><td>1mL</td><td>★1,2,3,4-四氯苯； 1,2,3,5-四氯苯； 1,2,3-三氯苯； 1,2,4,5-四氯苯； 1,2,4-三氯苯； 1,2-二氯苯； 1,3,5-三氯苯； 1,3-二氯苯； 1,4-二氯苯；六氯苯；五氯苯</td><td>200ug/mL</td></tr>
+			 <tr><td>Q-7539-O</td><td>28项挥发性有机物混标</td><td>甲醇*1.5mL</td><td>★1,1,1-三氯乙烷； 1,1,2-三氯乙烷； 1,1-二氯乙烯； 1,2-二氯苯； 1,2-二氯乙烷； 1,4-二氯苯；苯；苯乙烯；丙烯腈；对-二甲苯；二氯甲烷；二氯溴甲烷；反-1,2-二氯乙烯；甲苯；间-二甲苯；邻-二甲苯；六氯丁二烯；氯苯；氯仿；氯乙烯；三氯乙烯；三溴甲烷；顺-1,2-二氯乙烯；四氯乙烯；硝基苯；一氯二溴甲烷；乙苯；异丙基苯</td><td>100ug/mL</td></tr>
+			 <tr><td>S1211</td><td>己二酸二(2-乙基己基)酯</td><td>甲醇*1.5mL</td><td>★己二酸二(2-乙基己基)酯</td><td>1000ug/mL</td></tr>
+			 <tr><td>S1473</td><td>己内酰胺</td><td>二氯甲烷*1.5mL</td><td>★己内酰胺</td><td>2000 ug/mL</td></tr>
+			 <tr><td>S19149</td><td>二噁英（2,3,7,8-TCDD)</td><td>甲苯</td><td>★二噁英（2,3,7,8-TCDD)</td><td>可自选</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr><td>Q-7541-O</td><td>邻苯二甲酸二（乙基己基）酯标准溶液</td><td>甲醇*1.5mL</td><td>★邻苯二甲酸二(2-乙基己基)酯</td><td>1000ug/mL</td></tr>
+			 <tr><td>Q-7542-O</td><td>环氧氯丙烷标准溶液</td><td>甲醇*1.5mL</td><td>★环氧氯丙烷</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3610L-LR</td><td>微囊藻毒素 LR 标准溶液</td><td>甲醇*1mL</td><td>★微囊藻毒素-LR</td><td>10ug/mL</td></tr>
+			 <tr><td>S3629</td><td>氯乙烯标准溶液</td><td>甲醇*1.5mL</td><td>★氯乙烯</td><td>1000ug/mL</td></tr>
+			 <tr><td>S363</td><td>二硫化碳</td><td>吹扫捕集甲醇*1.5mL</td><td>★二硫化碳</td><td>2000 ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	 <tr><td>S3635</td><td>六氯丁二烯</td><td>甲醇*1.5mL</td><td>★六氯丁二烯</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3668</td><td>2,3-二溴丙酰胺标准溶液</td><td>乙酸乙酯*1.5mL</td><td>★2,3-二溴丙酰胺</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3669</td><td>丙烯腈标准溶液</td><td>甲醇*1.5mL</td><td>★丙烯腈</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3675</td><td>二氯甲烷标准溶液</td><td>甲醇*1.5mL</td><td>★二氯甲烷</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3676</td><td>1,2-二氯乙烷标准溶液</td><td>甲醇*1.5mL</td><td>★1,2-二氯乙烷</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	 <tr><td>S3677</td><td>1,1,1-三氯乙烷标准溶液</td><td>甲醇*1.5mL</td><td>★1,1,1-三氯乙烷</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3679</td><td>1,1-二氯乙烯</td><td>甲醇*1.5mL</td><td>★1,1-二氯乙烯</td><td>1000ug/mL</td></tr>
+		 <tr><td>Q-8397-O</td><td>苦味酸</td><td>甲醇*1.5mL</td><td>★苦味酸</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3681</td><td>松节油标准溶液</td><td>甲醇*1.5mL</td><td>★松节油</td><td>1000ug/mL</td></tr>
+		 <tr><td>S3683</td><td>丙烯酰胺</td><td>甲醇*1.5mL</td><td>★丙烯酰胺</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	 <tr><td>S3684</td><td>联苯胺标准溶液</td><td>甲醇*1.5mL</td><td>★联苯胺</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3693</td><td>2,4,6-三硝基甲苯标准溶液</td><td>甲醇*1.5mL</td><td>★2,4,6-三硝基甲苯</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3709</td><td>氯丁二烯标准溶液</td><td>甲醇*1.5mL</td><td>★氯丁二烯</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3718</td><td>丙烯醛标准溶液</td><td>乙腈*1.5mL</td><td>★丙烯醛</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3735</td><td>吡啶标准溶液</td><td>甲醇*1.5mL</td><td>★吡啶</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	 <tr><td>S3741</td><td>水合肼标准溶液</td><td>1N 盐酸*1.5mL</td><td>★盐酸肼(As N2)</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3742</td><td>丁基黄原酸标准溶液</td><td>水*1.5mL</td><td>★丁基黄原酸钾（As b）</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3745</td><td>邻苯二甲酸二乙酯</td><td>甲醇*1.5mL</td><td>★邻苯二甲酸二乙酯</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3746</td><td>1,2-二溴乙烯标准溶液</td><td>甲醇*1mL</td><td>★1,2-二溴乙烯</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3747</td><td>五氯丙烷标准溶液</td><td>甲醇*1mL</td><td>★1,1,2,3,3-五氯丙烷</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	  <tr><td>S473</td><td>乙腈</td><td>吹扫捕集甲醇*1.5mL</td><td>★乙腈</td><td>1000 ug/mL</td></tr>
+			 <tr><td>S54</td><td>硝基苯标准溶液</td><td>甲醇*1.5mL</td><td>★硝基苯</td><td>5000ug/mL</td></tr>
+			 <tr><td>S71259</td><td>2-萘酚</td><td>甲醇*1mL</td><td>★2-萘酚</td><td>1000ug/mL</td></tr>
+			 <tr><td>S71811</td><td>双酚 A 标准溶液</td><td>甲醇*1mL</td><td>★双酚 A</td><td>1000ug/mL</td></tr>
+			 <tr><td>S72478</td><td>2-异丁基-3-甲氧基吡嗪</td><td>甲醇*1mL</td><td>★2-异丁基-3-甲氧基吡嗪</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	  <tr><td>S79340</td><td>丙烯酸标准溶液</td><td>水*1mL</td><td>★丙烯酸</td><td>1000ug/mL</td></tr>
+			 <tr><td>S83605</td><td>戊二醛(以醛计)标准溶液</td><td>乙腈*1mL</td><td>★戊二醛2,4-二硝基苯腙</td><td>100ug/mL</td></tr>
+			 <tr><td>S-X9217</td><td>苯甲醚标准溶液</td><td>甲醇*1mL</td><td>★苯甲醚</td><td>1000ug/mL</td></tr>
+			 <tr><td rowspan="4">Q-6378-I</td><td rowspan="4">4项阴离子混标</td><td rowspan="4">125mL</td><td>★氟离子</td><td>50ug/mL</td></tr>
+			 <tr><td>★硫酸根</td><td>2000ug/mL</td></tr>
+			 <tr><td>★氯离子</td><td>2000ug/mL</td></tr>
+			 <tr><td>★硝酸盐氮</td><td>100ug/mL</td></tr>
+			 <tr><td>S1521</td><td>乙基汞标准溶液</td><td>甲醇</td><td>★乙基汞</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="result">
+<table id="example" class="display" border="1"  cellspacing="0">
+        <thead>
+            <tr>
+                <th width="10%">产品编号</th>
+                <th width="10%">名称</th>
+                <th width="15%">溶剂*包装</th>
+                <th width="55%">组分</th>
+                <th width="10%">浓度</th>
+            </tr>
+        </thead>
+        <tbody>
+        	   <tr><td>S1522</td><td>甲基汞</td><td>甲醇*1.5mL</td><td>★甲基汞</td><td>1000ug/mL</td></tr>
+			 <tr><td>S1523</td><td>黄磷磷标准溶液</td><td>环己烷*1.5mL</td><td>★黄磷</td><td>1000ug/mL</td></tr>
+			 <tr><td>S3744</td><td>四乙基铅标准溶液</td><td>甲醇*1mL</td><td>★四乙基铅</td><td>1000ug/mL</td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

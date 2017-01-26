@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="techdata" >
+  <resultMap id="BaseResultMap" type="com.shlaitao.techdata.domain.TTechData" >
+    <id column="ID" property="id" jdbcType="INTEGER" />
+    <result column="TITLE" property="title" jdbcType="VARCHAR" />
+    <result column="CONTENT" property="content" jdbcType="VARCHAR" />
+    <result column="CREATETIME" property="createtime" jdbcType="VARCHAR" />
+    <result column="STATUS" property="status" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID,TITLE, CONTENT,left(CREATETIME, 10) as CREATETIME, STATUS
+  </sql>
+  <select id="query" resultMap="BaseResultMap" parameterType="com.shlaitao.techdata.domain.TTechData">
+	  select  ID,TITLE, left(CREATETIME, 10) as CREATETIME, STATUS from t_base_techdata 
+	  <where>
+	  STATUS='1'
+	  	<if test="title != null and title != ''">
+	  and	TITLE like '%${title}%'
+	  	</if>
+	  </where>
+	  order by ID desc
+  </select>
+  <select id="queryDetail"  resultMap="BaseResultMap" parameterType="com.shlaitao.techdata.domain.TTechData">
+  	select * from t_base_techdata 
+  	where ID = #{id,jdbcType=INTEGER}
+  </select>
+   <select id="queryBefore"  resultMap="BaseResultMap" parameterType="com.shlaitao.techdata.domain.TTechData">
+  	select ID,TITLE, CREATETIME, STATUS from t_base_techdata 
+  	where STATUS='1' and ID  &gt; #{id,jdbcType=INTEGER} order by ID limit 1
+  </select>
+  <select id="queryAfter"  resultMap="BaseResultMap" parameterType="com.shlaitao.techdata.domain.TTechData">
+  select ID,TITLE, CREATETIME, STATUS from t_base_techdata 
+  	where STATUS='1' and ID  &lt; #{id,jdbcType=INTEGER} order by ID desc limit 1
+  </select>
+  <insert id="insert" parameterType="com.shlaitao.techdata.domain.TTechData">
+	insert into t_base_techdata(TITLE, CONTENT,CREATETIME, STATUS) values(#{title,jdbcType=VARCHAR}
+	,#{content,jdbcType=VARCHAR},#{createtime,jdbcType=VARCHAR},#{status,jdbcType=VARCHAR})
+  </insert>
+  <update id="update" parameterType="com.shlaitao.techdata.domain.TTechData">
+  	update t_base_techdata set TITLE = #{title,jdbcType=VARCHAR},CONTENT = #{content,jdbcType=VARCHAR}
+  	where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <delete id="delete" parameterType="com.shlaitao.techdata.domain.TTechData">
+  delete from t_base_techdata where ID = #{id,jdbcType=INTEGER}
+  </delete>
+</mapper>

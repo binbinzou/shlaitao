@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" href="css/self/css.css" rel="stylesheet">
+<link type="text/css" href="css/ext/nivo-slider.css" rel="stylesheet">
+<link type="text/css" href="css/ext/pagination.css" rel="stylesheet">
+<link type="text/css" href="css/self/main.css" rel="stylesheet">
+<script type="text/javascript" src="js/ext/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="js/ext/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/ext/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="js/ext/jquery.pagination.js"></script>
+<script type="text/javascript" src="js/self/product.js"></script>
+<title>产品系列</title>
+<style type="text/css">
+#Searchresult{width:100%; height:100%; padding:10px; }
+td{white-space: pre-wrap;word-wrap:break-word;}
+</style>
+</head>
+
+<body>
+<div class="main" id = "main">
+<div class="scon-banner">
+<div class="imgText">
+	<h3>产品系列</h3>
+	<h5>Product series
+	</h5>
+</div>
+<img src="images/cpzx.jpg" alt="">
+</div>
+<div id="other_box" >
+      <div class="main_left">
+                   <!--  <div class="cpl_title">产品系列</div> -->
+                    <div class="gsjj_tit1">产品系列</div>
+                    <div class="cpl">
+                            <div class="left"> 
+	                             <div class="div1" id="productType">
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('8,水质监测标液')">水质监测标液</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('7,空气检测标液')">空气检测标液</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('4,水质监测标样')">水质监测标样</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('3,土壤检测标样')">土壤检测标样</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('2,常规检测')">常规检测</a></div>
+		                            <div class="div2"><div class="jbsz"></div><a href="javascript:void(0)" onclick="change_page('1,实验室常规标液')">实验室常规标液</a></div>
+	                            </div>
+                            </div>
+                    </div>
+                </div>
+      <div class="main_right">
+                    <div class="daohang" id="daohang">您现在的位置：<a href="#" onclick="back_page('firstMiddle.html');">网站首页</a> &gt; 产品系列   &gt; 水质监测标液</div>
+                    <div id="Searchresult" ></div>
+                   <div id="hiddenresult" style="margin-left:-10px;    padding-right: 5px;">
+                   <div class="result" style="padding-top: 10px;padding-bottom: 10px;">
+                   <table id="example" style="width: 100%;" class="display"  border="1"  cellspacing="0" >
+				        <thead style="font-family:Microsoft YaHei;font-size: 16px;">
+				            <tr>
+				                <th width="120px" >产品编号</th>
+				                <th width="80px" >名称</th>
+				                <th width="120px" >溶剂*包装</th>
+				                <th width="360px" >组分</th>
+				                <th width="120px" >浓度</th>
+				            </tr>
+				        </thead>
+				        <tbody id="tbody" style="font-family:Microsoft YaHei;font-size: 14px;">
+				        </tbody>
+				    </table>
+					</div>
+					
+					<!--jQuery Templates--> 
+				<script id="Template" type="text/x-jquery-tmpl"> 
+					<tr>
+         			  <td >${number}</td>
+        			   <td >${name}</td>
+        			   <td >${dose}</td>
+         			 <td >${content} </td>
+       			    <td >${consistence}</td>
+      				 </tr> 
+				</script> 
+				       <div id="Pagination" style="text-align:center;padding-bottom: 10px;" class="pagination"><!-- 这里显示分页 --></div>
+                    </div>
+                </div>
+</div>
+</div>
+</body>
+</html>

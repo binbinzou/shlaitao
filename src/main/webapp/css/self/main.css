@@ -1,0 +1,77 @@
+@CHARSET "UTF-8";
+body{font-family:Microsoft YaHei;}
+#slider{ width:100%; height:400px; background:url(../../images/loading.gif) no-repeat 50% 50%;}
+#slider img {position:absolute;top:0px;left:0px;display:none;width: 100%;height:100%}
+.nivo-controlNav{ width: 100px;  
+    height: 22px;  
+    margin: 0 auto;
+    padding-top:300px}
+.nivo-controlNav a {display:block;width:22px;height:22px;background:url(../../images/bullets.png) no-repeat;text-indent:-9999px;border:0;margin-right:3px;float:left;}
+.nivo-controlNav a.active {background-position:0 -22px;}
+.nivo-directionNav a {display:block;width:30px;height:30px;background:url(../../images/arrows.png) no-repeat;text-indent:-9999px;border:0;}
+a.nivo-nextNav {background-position:-30px 0;right:15px;}
+a.nivo-prevNav {left:15px;}
+.nivo-caption {text-shadow:none; font-family: "Microsoft YaHei";}
+.nivo-caption a {color:#efe9d1;text-decoration:underline;}
+td{word-wrap:break-word;word-break:break-all;}
+/* table{border:1px solid #AAE} */
+td{border:solid #AAE; border-width:0px 1px 1px 0px;}
+th{border:solid #AAE; border-width:0px 1px 1px 0px;}
+table{border:solid #AAE; border-width:1px 0px 0px 1px;font-family:Microsoft YaHei;}
+
+
+
+/**newMiddle*/
+.ra-ul {
+    overflow: hidden;
+    width: 751px;
+    padding: 0 5px;
+}
+.fl {
+    float: left;
+}
+.ra-ul li {
+    width: 751px;
+    font-size: 14px;
+    line-height: 30px;
+    float: left;
+}
+.ra-ul li span {
+    float: right;
+}
+.scon-banner {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.newsend-btn {
+   	border-bottom: 2px solid #e1e0e0;
+    height: 40px;
+}
+.newsend-btn .t {
+    width: 274px;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+        color: #636363;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn {
+    width: 132px;
+    text-align: center;
+    margin: 0 30px;
+    color: #fff;
+    /* //background: url(../../images/btn1.gif) no-repeat; */
+}
+.newsend-btn a {
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+        color: #636363;
+    text-decoration: none;
+    cursor: pointer;
+}
